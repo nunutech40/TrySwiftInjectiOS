@@ -5,5 +5,6 @@ target 'Testidididi' do
   use_frameworks!
 
   pod 'Swinject'
+  pod 'SwinjectStoryboard'
 
 end
