@@ -1,7 +1,7 @@
 PODS:
-  - Swinject (2.9.1)
-  - SwinjectStoryboard (2.2.0):
-    - Swinject (~> 2.6)
+  - Swinject (2.7.1)
+  - SwinjectStoryboard (2.2.2):
+    - Swinject (~> 2.7.1)
 
 DEPENDENCIES:
   - Swinject
@@ -13,8 +13,8 @@ SPEC REPOS:
     - SwinjectStoryboard
 
 SPEC CHECKSUMS:
-  Swinject: a827d508c6270da03ec74e558e728917a888fa9b
-  SwinjectStoryboard: 32512ef16c2b0ff5b8f823b23539c4a50f6d3383
+  Swinject: ddf78b8486dd9b71a667b852cad919ab4484478e
+  SwinjectStoryboard: 240ce371396da09a4c43c72ee5c148108500e184
 
 PODFILE CHECKSUM: 8bcbe46cd69c0562ca6e0e2ccb486640a8e4011c
 

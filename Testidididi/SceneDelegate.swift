@@ -37,30 +37,8 @@ class Car {
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
-    
-    let container: Container = {
-        let container = Container()
-        container.register(Engine.self) { _ in Engine() }
-        container.register(Car.self) { r in Car(engine: r.resolve(Engine.self)!)}
-        container.register(ViewController.self) { r in
-            let controller = ViewController()
-            controller.car = r.resolve(Car.self)!
-            return controller
-        }
-        
-        return container
-    }()
-
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-        
-        // Buat instance window.
-        let window = UIWindow(frame: UIScreen.main.bounds)
-        window.makeKeyAndVisible()
-        self.window = window
-        
-        // Pembuatan instance root view controller dengan Container DI.
-        window.rootViewController = container.resolve(ViewController.self)
         
         guard let _ = (scene as? UIWindowScene) else { return }
     }
